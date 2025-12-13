@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: backend
-          image: jimwhere-backend:dev
-          imagePullPolicy: IfNotPresent
+          image: docker.io/kimsangjaedocker/jimwhere-backend:dev
+          imagePullPolicy: Always
           ports:
             - containerPort: 8081
           envFrom:
