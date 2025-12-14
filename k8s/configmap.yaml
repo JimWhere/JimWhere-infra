@@ -15,5 +15,5 @@ data:
 
   # Toss (공개돼도 큰 문제 없음)
   TOSS_BASE_URL: https://api.tosspayments.com
-  TOSS_SUCCESS_URL: http://jimwhere.local/payments/success
-  TOSS_FAIL_URL: http://jimwhere.local/payments/fail
+  TOSS_SUCCESS_URL: https://jimwhere.local/payments/success
+  TOSS_FAIL_URL: https://jimwhere.local/payments/fail
