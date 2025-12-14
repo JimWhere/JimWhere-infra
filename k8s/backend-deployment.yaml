@@ -19,6 +19,9 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8088
+          env:
+              - name: SERVER_PORT
+                value: "8088"
           envFrom:
             - configMapRef:
                 name: jimwhere-config
