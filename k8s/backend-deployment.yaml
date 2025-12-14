@@ -18,7 +18,7 @@ spec:
           image: docker.io/kimsangjaedocker/jimwhere-backend:dev
           imagePullPolicy: Always
           ports:
-            - containerPort: 8081
+            - containerPort: 8088
           envFrom:
             - configMapRef:
                 name: jimwhere-config

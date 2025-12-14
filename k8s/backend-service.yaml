@@ -9,5 +9,5 @@ spec:
     app: jimwhere-backend
   ports:
     - port: 8081
-      targetPort: 8081
+      targetPort: 8088
       nodePort: 30081
