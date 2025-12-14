@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: jimwhere-frontend
   labels:
-    app: frontend
+    app: jimwhere-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: jimwhere-frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: jimwhere-frontend
     spec:
       containers:
         - name: frontend
