@@ -27,4 +27,4 @@ spec:
               service:
                 name: jimwhere-backend
                 port:
-                  number: 8081
+                  number: 8088
