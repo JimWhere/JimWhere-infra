@@ -5,13 +5,17 @@ metadata:
   namespace: jimwhere
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - jimwhere.local
+      secretName: jimwhere-tls
   rules:
     - host: jimwhere.local
       http:
         paths:
-          # 프론트 (Vue)
           - path: /
             pathType: Prefix
             backend:
@@ -19,10 +23,8 @@ spec:
                 name: jimwhere-frontend
                 port:
                   number: 80
-
-          #  백엔드 API
           - path: /api/v1(/|$)(.*)
-            pathType: Prefix
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: jimwhere-backend
