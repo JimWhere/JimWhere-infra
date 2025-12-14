@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: your-docker-id/jimwhere-front:latest
+          image: kimsangjaedocker/jimwhere-front:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
